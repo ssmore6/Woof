@@ -6,6 +6,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class Profile2Activity extends AppCompatActivity {
 
@@ -22,6 +24,17 @@ public class Profile2Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+        onClickListener();
+    }
+
+    public void onClickListener(){
+        Button reserveButton = (Button) findViewById(R.id.button6);
+        reserveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(Profile2Activity.this, "Sitter has been added to schedule!", Toast.LENGTH_SHORT).show();
             }
         });
     }

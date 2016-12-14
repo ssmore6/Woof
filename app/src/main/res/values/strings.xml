@@ -9,4 +9,5 @@
     <string name="title_activity_sit">SitActivity</string>
     <string name="title_activity_profile1">Profile1Activity</string>
     <string name="title_activity_profile2">Profile2Activity</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
 </resources>

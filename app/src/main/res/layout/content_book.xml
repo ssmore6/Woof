@@ -25,15 +25,6 @@
         android:layout_height="200dp" />
 
     <Button
-        android:text="SIT A PET"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
-
-    <Button
         android:text="PLAN A PLAYDATE"
         android:layout_height="wrap_content"
         android:id="@+id/button5"
@@ -42,7 +33,7 @@
         android:layout_width="200dp" />
 
     <Button
-        android:text="FIND A SITTER"
+        android:text="SIT A PET"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
         android:layout_width="200dp"
@@ -51,24 +42,35 @@
         android:layout_alignStart="@+id/button5" />
 
     <ImageButton
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/clock"
-        android:id="@+id/imageButton"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/button5"
-        android:layout_toEndOf="@+id/imageButton2" />
-
-    <ImageButton
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="centerInside"
         app:srcCompat="@drawable/profile2"
         android:id="@+id/imageButton2"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp"
         android:layout_alignTop="@+id/imageButton"
-        android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5" />
+        android:layout_toLeftOf="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton" />
+
+    <Button
+        android:text="find A SITTER"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <ImageButton
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/clock"
+        android:id="@+id/imageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button5"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
 </RelativeLayout>

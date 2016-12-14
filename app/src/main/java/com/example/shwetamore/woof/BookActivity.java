@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class BookActivity extends AppCompatActivity {
 
@@ -31,12 +32,21 @@ public class BookActivity extends AppCompatActivity {
     }
 
     public void addButtonListener(){
-        Button sitAPet = (Button) findViewById(R.id.button2);
-        sitAPet.setOnClickListener(new View.OnClickListener() {
+        Button findSitter = (Button) findViewById(R.id.button2);
+        findSitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent mapScreen = new Intent(BookActivity.this, SitActivity.class);
                 startActivity(mapScreen);
+            }
+        });
+
+        ImageButton scheduleButton = (ImageButton) findViewById(R.id.imageButton);
+        scheduleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent schedule = new Intent(BookActivity.this, ScheduleActivity.class);
+                startActivity(schedule);
             }
         });
     }

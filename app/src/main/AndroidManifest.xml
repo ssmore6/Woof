@@ -75,6 +75,10 @@
         <activity
             android:name=".Profile2Activity"
             android:label="@string/title_activity_profile2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="@string/title_activity_schedule"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
